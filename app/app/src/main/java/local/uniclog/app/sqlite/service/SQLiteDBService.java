@@ -16,7 +16,7 @@ public class SQLiteDBService {
     private final SQLiteDBRepository repository;
 
     public SQLiteDBEntity build() {
-        Random random = new Random();
+        var random = new Random();
         return SQLiteDBEntity.builder()
                 .text("Text" + random.nextInt(50) + random.nextInt(50) + random.nextInt(50))
                 .number(random.nextInt(50))

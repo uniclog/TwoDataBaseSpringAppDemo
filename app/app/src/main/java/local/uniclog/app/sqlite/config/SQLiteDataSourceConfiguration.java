@@ -52,8 +52,7 @@ public class SQLiteDataSourceConfiguration {
     @Primary
     @Bean
     public DataSource sQLiteDataSource() {
-        DriverManagerDataSource dataSource
-                = new DriverManagerDataSource();
+        var dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(
                 Objects.requireNonNull(
                         environment.getProperty("sqlite.spring.datasource.driver-class-name")));

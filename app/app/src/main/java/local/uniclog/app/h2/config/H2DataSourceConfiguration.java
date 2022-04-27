@@ -52,8 +52,7 @@ public class H2DataSourceConfiguration {
     @Primary
     @Bean
     public DataSource h2DataSource() {
-        DriverManagerDataSource dataSource
-                = new DriverManagerDataSource();
+        var dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(
                 Objects.requireNonNull(
                         environment.getProperty("h2.spring.datasource.driver-class-name")));

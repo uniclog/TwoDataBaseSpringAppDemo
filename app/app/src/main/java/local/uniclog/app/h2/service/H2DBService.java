@@ -16,7 +16,7 @@ public class H2DBService {
     private final H2DBRepository repository;
 
     public H2DBEntity build() {
-        Random random = new Random();
+        var random = new Random();
         return H2DBEntity.builder()
                 .text("Text" + random.nextInt(50) + random.nextInt(50) + random.nextInt(50))
                 .number(random.nextInt(50))
