@@ -1,2 +1,6 @@
 # TwoDataBaseSpringAppDemo
-Spring app with two database
+Spring app with multiple database
+
+Databases:
+- h2
+- sqlite
